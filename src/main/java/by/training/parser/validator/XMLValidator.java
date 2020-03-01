@@ -16,7 +16,6 @@ import org.xml.sax.SAXException;
 import org.xml.sax.SAXParseException;
 import org.xml.sax.helpers.DefaultHandler;
 
-import by.training.parser.exception.ServiceException;
 import by.training.parser.exception.XMLParserException;
 
 public class XMLValidator extends DefaultHandler {
@@ -25,10 +24,10 @@ public class XMLValidator extends DefaultHandler {
 	private static final String LANGUAGE = XMLConstants.W3C_XML_SCHEMA_NS_URI;
 	private static final String XML_REGEX = "(?i).*\\.xml";
 
-	public void isXMLTypeFile(String fileName) throws ServiceException {
+	public void isXMLTypeFile(String fileName) throws XMLParserException {
 		if (fileName == null || !fileName.matches(XML_REGEX)) {
 			LOGGER.warn("File not valid");
-			throw new ServiceException("File not valid");
+			throw new XMLParserException("File not valid");
 		}
 	}
 
