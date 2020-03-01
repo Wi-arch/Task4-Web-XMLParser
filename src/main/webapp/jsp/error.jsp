@@ -34,16 +34,47 @@ html, body, header, .view {
 	background-color: #3f51b5 !important;
 }
 
-.navbar:not (.top-nav-collapse ) {
-	background: transparent !important;
-}
+.navbar
+:not
+ 
+(
+.top-nav-collapse
+ 
+)
+{
+background
+:
+ 
+transparent
+ 
+!
+important
+;
 
+
+}
 @media ( max-width : 991px) {
-	.navbar:not (.top-nav-collapse ) {
-		background: #3f51b5 !important;
-	}
+	.navbar
+	:not
+	 
+	(
+	.top-nav-collapse
+	 
+	)
+	{
+	background
+	:
+	 
+	#3f51b5
+	 
+	!
+	important
+	;
+	
+	
 }
 
+}
 .rgba-gradient {
 	background: -webkit-linear-gradient(45deg, rgba(0, 0, 0, 0.7),
 		rgba(72, 15, 144, 0.4) 100%);
