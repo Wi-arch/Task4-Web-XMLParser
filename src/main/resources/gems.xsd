@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.example.com/gems"
+	xmlns:tns="http://www.example.com/gems" elementFormDefault="qualified">
+
+	<element name="gems">
+		<complexType>
+			<sequence>
+				<element name="gem" minOccurs="1" maxOccurs="unbounded">
+					<complexType>
+						<sequence>
+							<element name="name" type="string"/>
+							<element name="preciousness">
+								<simpleType>
+									<restriction base="string">
+										<enumeration value="precious" />
+										<enumeration value="semiprecious" />
+									</restriction>
+								</simpleType>
+							</element>
+							<element name="origin" type="string" />
+							<element name="visualParameters">
+								<complexType>
+									<sequence>
+										<element name="color">
+											<simpleType>
+												<restriction base="string">
+													<enumeration value="red" />
+													<enumeration value="black" />
+													<enumeration value="green" />
+													<enumeration value="yellow" />
+													<enumeration value="white" />
+													<enumeration value="purple" />
+												</restriction>
+											</simpleType>
+										</element>
+										<element name="transparency">
+											<simpleType>
+												<restriction base="int">
+													<minInclusive value="0" />
+													<maxInclusive value="100" />
+												</restriction>
+											</simpleType>
+										</element>
+										<element name="facets">
+											<simpleType>
+												<restriction base="int">
+													<minInclusive value="4" />
+													<maxInclusive value="15" />
+												</restriction>
+											</simpleType>
+										</element>
+									</sequence>
+								</complexType>
+							</element>
+							<element name="value">
+								<simpleType>
+									<restriction base="double">
+										<minExclusive value="0" />
+									</restriction>
+								</simpleType>
+							</element>
+							<element name="productionDate" type="date" />
+						</sequence>
+						<attribute name="id" use="required">
+							<simpleType>
+								<restriction base="ID">
+									<pattern value="\w+" />
+								</restriction>
+							</simpleType>
+						</attribute>
+					</complexType>
+				</element>
+			</sequence>
+		</complexType>
+	</element>
+</schema>
