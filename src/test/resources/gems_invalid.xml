@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gems xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.example.com/gems"
+	xsi:schemaLocation="http://www.example.com/gems gems.xsd">
+	
+		<!@name>Diamond</name>
+		<preciousness>precious</preciousness>
+		<origin>Canada</origin>
+		<value>1.9</value>
+		<productionDate>2016-03-07+08:50</productionDate>
+	</gem>
+	<gem id="Amethyst1">
+		<name>Amethyst</name>
+		<preciousness>precious</preciousness>
+		<origin>Brazil</origin>
+		<visualParameters>
+			<color>purple</color>
+			<transparency>45</transparency>
+			<facets>12</facets>
+		</visualParameters>
+		<value>3.1</value>
+		<productionDate>2017-08-27-12:00</productionDate>
+	</gem>
+	<gem id="Emerald1">
+		<name>Emerald</name>
+		<preciousness>semiprecious</preciousness>
+		<origin>Egypt</origin>
+		<visualParameters>
+			<color>green</color>
+			<transparency>30</transparency>
+			<facets>8</facets>
+		</visualParameters>
+		<value>2.8</value>
+		<productionDate>2015-11-19-08:35</productionDate>
+	</gem>
+	<gem id="Ruby1">
+		<name>Ruby</name>
+		<preciousness>semiprecious</preciousness>
+		<origin>Thailand</origin>
+		<visualParameters>
+			<color>red</color>
+			<transparency>50</transparency>
+			<facets>15</facets>
+		</visualParameters>
+		<value>3.9</value>
+		<productionDate>2018-07-02-09:40</productionDate>
+	</gem>
+	<gem id="Citrine1">
+		<name>Citrine</name>
+		<preciousness>precious</preciousness>
+		<origin>Spain</origin>
+		<visualParameters>
+			<color>yellow</color>
+			<transparency>70</transparency>
+			<facets>10</facets>
+		</visualParameters>
+		<value>1.5</value>
+		<productionDate>2018-12-09+04:20</productionDate>
+	</gem>
+</gems>
