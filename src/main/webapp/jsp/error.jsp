@@ -9,9 +9,9 @@
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <title>Error</title>
-<link rel="stylesheet" href="./css/all.css">
-<link href="./css/bootstrap.min.css" rel="stylesheet">
-<link href="./css/mdb.min.css" rel="stylesheet">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/css/all.css">
+<link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet">
+<link href="${pageContext.request.contextPath}/css/mdb.min.css" rel="stylesheet">
 <style>
 /* Required for full background image */
 html, body, header, .view {
@@ -133,7 +133,7 @@ to {
 		<nav
 			class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
 			<div class="container-fluid">
-				<a class="navbar-brand" href="./"> <strong>Gem Store</strong>
+				<a class="navbar-brand" href="${pageContext.request.contextPath}/index.jsp"> <strong>Gem Store</strong>
 				</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse"
 					data-target="#navbarSupportedContent-7"
@@ -144,7 +144,7 @@ to {
 				<div class="collapse navbar-collapse" id="navbarSupportedContent-7">
 					<ul class="navbar-nav mr-auto">
 						<li class="nav-item active"><a
-							class="nav-link waves-effect waves-light" href="./">Home <span
+							class="nav-link waves-effect waves-light" href="${pageContext.request.contextPath}/index.jsp">Home <span
 								class="sr-only">(current)</span>
 						</a></li>
 					</ul>
@@ -152,7 +152,7 @@ to {
 			</div>
 		</nav>
 		<div class="view"
-			style="background-image: url(&#39;./images/background.jpg&#39;); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+			style="background-image: url(&#39;${pageContext.request.contextPath}/images/background.jpg&#39;); background-repeat: no-repeat; background-size: cover; background-position: center center;">
 			<div
 				class="mask rgba-gradient d-flex justify-content-center align-items-center">
 				<div class="text-center h-75">
@@ -164,10 +164,10 @@ to {
 			</div>
 		</div>
 	</header>
-	<script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
-	<script type="text/javascript" src="./js/popper.min.js"></script>
-	<script type="text/javascript" src="./js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="./js/mdb.min.js"></script>
+	<script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="${pageContext.request.contextPath}/js/popper.min.js"></script>
+	<script type="text/javascript" src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="${pageContext.request.contextPath}/js/mdb.min.js"></script>
 	<div class="hiddendiv common"></div>
 	<script>
 		new WOW().init();
