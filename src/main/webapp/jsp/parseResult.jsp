@@ -8,9 +8,9 @@
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <title>Gem table</title>
-<link rel="stylesheet" href="./css/all.css">
-<link href="./css/bootstrap.min.css" rel="stylesheet">
-<link href="./css/mdb.min.css" rel="stylesheet">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/css/all.css">
+<link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet">
+<link href="${pageContext.request.contextPath}/css/mdb.min.css" rel="stylesheet">
 <style>
 html, body, header, .view {
 	height: 100%;
@@ -152,7 +152,7 @@ to {
 			</div>	
 		</nav>
 		<div class="view"
-			style="background-image: url(&#39;./images/background.jpg&#39;); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+			style="background-image: url(&#39;${pageContext.request.contextPath}/images/background.jpg&#39;); background-repeat: no-repeat; background-size: cover; background-position: center center;">
 			<div
 				class="mask rgba-gradient d-flex justify-content-center align-items-center">
 
@@ -192,10 +192,10 @@ to {
 		</div>
 	</header>
 
-	<script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
-	<script type="text/javascript" src="./js/popper.min.js"></script>
-	<script type="text/javascript" src="./js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="./js/mdb.min.js"></script>
+	<script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="${pageContext.request.contextPath}/js/popper.min.js"></script>
+	<script type="text/javascript" src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="${pageContext.request.contextPath}/js/mdb.min.js"></script>
 	<div class="hiddendiv common"></div>
 	<script>
 		new WOW().init();

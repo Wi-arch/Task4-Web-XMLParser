@@ -14,7 +14,7 @@ public class XMLValidatorTest {
 
 	private final static Logger LOGGER = Logger.getLogger(XMLValidatorTest.class);
 	private final static String VALID_XML = "gems.xml";
-	private final static String INVALID_XML = "gems_invalid.xml";
+	private final static String INVALID_XML = "invalid.xml";
 	private final static String SCHEMA_NAME = "gems.xsd";
 	private XMLValidator xMLValidator;
 	private InputStream validXMLFile;
@@ -34,7 +34,7 @@ public class XMLValidatorTest {
 	@Test
 	public void testIsXMLTypeFilePositive() throws XMLParserException {
 		String fileName = "web.xml";
-		xMLValidator.isXMLTypeFile(fileName);
+		xMLValidator.isXMLTypeFile(fileName);		
 	}
 
 	@Test(expected = XMLParserException.class)
