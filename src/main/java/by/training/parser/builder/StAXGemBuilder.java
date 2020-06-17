@@ -88,6 +88,8 @@ public class StAXGemBuilder extends GemBuilder {
                         return gem;
                     }
                     break;
+                default:
+                    throw new XMLStreamException("Unknown element in tag gem");
             }
         }
         throw new XMLStreamException("Unknown element in tag gem");
@@ -120,13 +122,14 @@ public class StAXGemBuilder extends GemBuilder {
                     if (GemEnum.valueOf(name.toUpperCase()) == GemEnum.VISUALPARAMETERS) {
                         return;
                     }
+                    break;
+                default:
+                    throw new XMLStreamException("Unknown element in tag visualParameters");
             }
         }
-        throw new XMLStreamException("Unknown element in tag visualParameters");
     }
 
     private String getXMLText(XMLStreamReader reader) throws XMLStreamException {
         return XMLStreamConstants.END_ELEMENT == reader.next() ? EMPTY_STRING : reader.getText();
     }
-
 }

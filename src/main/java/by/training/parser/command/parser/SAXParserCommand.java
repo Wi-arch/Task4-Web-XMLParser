@@ -30,7 +30,7 @@ public class SAXParserCommand implements Command {
             request.setAttribute(JspParameter.PARSER_RESULT.getValue(), gemList);
             page = PageEnum.PARSE_RESULT_PAGE.getValue();
         } catch (IOException | ServletException | ServiceException e) {
-            LOGGER.warn("Cannot parse file", e);
+            LOGGER.warn("Cannot parse file {}", e);
             request.setAttribute(JspParameter.ERROR.getValue(), JspParameter.PARSER_ERROR_MESSAGE.getValue());
             page = PageEnum.HOME_PAGE.getValue();
         }

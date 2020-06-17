@@ -6,25 +6,15 @@ import by.training.parser.command.parser.StAXParserCommand;
 
 public enum CommandEnum {
 
-	PARSE_DOM {
-		{
-			this.command = new DOMParserCommand();
-		}
-	},
-	PARSE_SAX {
-		{
-			this.command = new SAXParserCommand();
-		}
-	},
-	PARSE_STAX {
-		{
-			this.command = new StAXParserCommand();
-		}
-	};
+    PARSE_DOM(new DOMParserCommand()), PARSE_SAX(new SAXParserCommand()), PARSE_STAX(new StAXParserCommand());
 
-	Command command;
+    CommandEnum(Command command) {
+        this.command = command;
+    }
 
-	public Command getCommand() {
-		return command;
-	}
+    private Command command;
+
+    public Command getCommand() {
+        return command;
+    }
 }

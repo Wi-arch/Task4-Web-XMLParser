@@ -31,13 +31,13 @@ public class XMLValidator {
         if (sourceFile == null || schemaName == null) {
             throw new XMLParserException("source file null");
         }
-        SchemaFactory factory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
         try {
+            SchemaFactory factory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
             Schema schema = factory.newSchema(new File(getClass().getClassLoader().getResource(schemaName).toURI()));
             Validator validator = schema.newValidator();
             validator.validate(new StreamSource(sourceFile));
         } catch (IOException | SAXException | URISyntaxException e) {
-            LOGGER.warn("File is not valid because " + e.getMessage());
+            LOGGER.warn("File is not valid because {}", e.getMessage());
             throw new XMLParserException(e);
         }
     }
